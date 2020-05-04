@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href = "./style.css">
+    <title>Wednesday Night Racing Boat Reservation</title>
+  </head>
+  <body >
+    <!--
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+        <span class="navbar-brand"> J/22 Wednesday Night Racing</span>
+    </nav>
+    -->
+    <div class= "logo">
+        <img src="http://www.fortworthboatclub.com/wp-content/themes/fortworthboatclubwp/images/logo.png">
+    </div>
+    <main class="container" style="margin-top:20px">
+            <h1>Wednesday Night Racing</h1>
+            <h2><span id ="Wednesday"></span></h2>
+            <h3>First Gun: 6:30 PM</h3>
+            <div style="margin-top:20px">
+                <h4>Register for this week:</h4>
+            </div>
+            <form id= "userForm" action="https://dbzhrf18nc.execute-api.us-east-1.amazonaws.com/dev/users" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                <input type="submit" name="" id="">
+                <input type="hidden" name="userId"  id="userId" value="dsfs">
+            </form>
+            <h3>Current Entries:</h3>
+            <table class="table table-striped"> 
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Boat #</td>
+                    </tr>
+                <tbody id="userTable">
+                    
+                </tbody>
+                </thead>
+            </table>
+            <div id="message"></div>
+    </main>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src = "./index.js"></script>
+  </body>
+</html>
