@@ -9,7 +9,7 @@ const USERS_TABLE = process.env.USERS_TABLE;
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
 app.use(bodyParser.urlencoded());
 app.use(bodyParser.json({ strict: false }));
-const baseURL = 'http://j22.connerfullerton.com.s3-website-us-east-1.amazonaws.com/'
+const baseURL = 'https://j22.connerfullerton.com'
 app.get('/', function (req, res) {
   res.send('Hello World!')
 })
